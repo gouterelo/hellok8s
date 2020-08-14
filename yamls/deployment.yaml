@@ -40,13 +40,13 @@ metadata:
   name: hello-kubernetes-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+#    certmanager.k8s.io/cluster-issuer: letsencrypt-staging
 #    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
-  tls:
-  - hosts:
-    - hola.k8stest.pjn.gov.ar
-    secretName: letsencrypt-staging
+  #tls:
+  #- hosts:
+  #  - hola.k8stest.pjn.gov.ar
+  #  secretName: letsencrypt-staging
   rules:
   - host: hola.k8stest.pjn.gov.ar
     http:
